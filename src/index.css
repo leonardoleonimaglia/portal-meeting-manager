@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.text-orange {
+  color: #F64927 !important;
+}
+
+.btn-orange {
+  color: #fff !important;
+  background-color: #F64927 !important;
+  border-color: #F64927 !important;
+}
+
+.bg-orange {
+  background-color: #F64927 !important;
+}
