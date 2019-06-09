@@ -25,3 +25,7 @@ code {
 .bg-orange {
   background-color: #F64927 !important;
 }
+
+.dropdown-menu a:active {
+  background-color: #F64927 !important;
+}

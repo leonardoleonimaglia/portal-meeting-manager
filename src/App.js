@@ -1,12 +1,23 @@
 import React from 'react';
 import './App.css';
 import Login from './components/Login/Login';
-import Navbar from './components/Navbar/Navbar';
+import Menu from './components/Menu/Menu';
+import Roomcard from './components/Roomcard/Roomcard'
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Menu></Menu>
+      <br/>
+
+      <div class="container">
+        <div class="row">
+          <Roomcard></Roomcard>
+          <Roomcard></Roomcard>
+          <Roomcard></Roomcard>
+        </div>
+      </div>
+      
     </div>
   );
 }
