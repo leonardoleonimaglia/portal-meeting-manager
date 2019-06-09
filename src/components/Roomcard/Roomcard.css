@@ -1,3 +1,7 @@
 .card-border {
     border: 2px solid #28a745 !important;
 }
+
+.fa-w-20 {
+    margin-right: 10px !important;
+}

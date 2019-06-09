@@ -8,11 +8,13 @@ function App() {
   return (
     <div className="App">
       <Menu></Menu>
-      <br/>
 
       <div class="container">
         <div class="row">
           <Roomcard></Roomcard>
+          <Roomcard></Roomcard>
+          <Roomcard></Roomcard>
+
           <Roomcard></Roomcard>
           <Roomcard></Roomcard>
         </div>
