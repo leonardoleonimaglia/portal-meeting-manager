@@ -1,3 +1,10 @@
+.card:hover {
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(40,167,69,0.55);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(40,167,69,0.55);
+    box-shadow: 0px 0px 7px 1px rgba(40,167,69,0.55);
+    cursor: pointer;
+}
+
 .card-border {
     border: 2px solid #28a745 !important;
 }

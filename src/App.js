@@ -3,25 +3,25 @@ import './App.css';
 import Login from './components/Login/Login';
 import Menu from './components/Menu/Menu';
 import Roomcard from './components/Roomcard/Roomcard'
-import Calendar from './components/Calendar/Calendar'
+import EventInfo from './components/EventInfo/EventInfo'
 
 function App() {
   return (
     <div className="App">
-      <Menu></Menu>
+      <Menu/>
 
       <div class="container">
         <div class="row">
-          <Roomcard></Roomcard>
-          <Roomcard></Roomcard>
-          <Roomcard></Roomcard>
+          <Roomcard title="Bromélia"/>
+          <Roomcard title="Begônia"/>
+          <Roomcard title="Azaléia"/>
 
-          <Roomcard></Roomcard>
-          <Roomcard></Roomcard>
+          <Roomcard title="Begônia"/>
+          <Roomcard title="Camélia"/>
         </div>
-
-        <Calendar></Calendar>
       </div>
+
+      <EventInfo title="Begônia"/>
       
     </div>
   );

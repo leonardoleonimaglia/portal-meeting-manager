@@ -1,4 +1,5 @@
 import React from 'react'
+import './Calendar.css'
 import BigCalendar from 'react-big-calendar'
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
@@ -11,36 +12,15 @@ const myEventsList = [
         id: 0,
         title: 'Teste dia 09',
         allDay: true,
-        start: new Date(2019, 6, 9),
-        end: new Date(2019, 6, 9),
+        start: new Date(2019, 5, 9),
+        end: new Date(2019, 5, 9),
     },
     {
         id: 1,
         title: 'Teste',
-        allDay: true,
-        start: new Date(2019, 6, 10),
-        end: new Date(2019, 6, 10),
-    },
-    {
-        id: 2,
-        title: 'Teste',
-        allDay: true,
-        start: new Date(2019, 6, 10),
-        end: new Date(2019, 6, 10),
-    },
-    {
-        id: 3,
-        title: 'Teste',
-        allDay: true,
-        start: new Date(2019, 6, 10),
-        end: new Date(2019, 6, 10),
-    },
-    {
-        id: 4,
-        title: 'Teste',
-        allDay: true,
-        start: new Date(2019, 6, 10),
-        end: new Date(2019, 6, 10),
+        allDay: false,
+        start: new Date(2019, 5, 10),
+        end: new Date(2019, 5, 12),
     }
 ]
 
@@ -52,7 +32,6 @@ const messages = {
   month: 'Mês',
   week: 'Semana',
   day: 'Dia',
-  agenda: 'Agenda',
   date: 'Data',
   time: 'Hora',
   event: 'Evento',
@@ -67,6 +46,7 @@ let Calendar = props => (
       startAccessor="start"
       endAccessor="end"
       messages={messages}
+      views={['month', 'day', 'week']}
     />
   </div>
 )
