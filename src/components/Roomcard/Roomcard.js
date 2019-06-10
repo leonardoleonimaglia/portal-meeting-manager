@@ -10,7 +10,7 @@ const cardTextSize = {
 class RoomCard extends Component {  
   render() {
     return (
-      <div class="col-sm-4 mt-4" data-toggle="modal" data-target="#eventModal">
+      <div class="col-sm-4 mt-4" data-toggle="modal" data-target="#roomInfoModal">
           <div class="card border-bottom-0">
               <div class="card-body">
                   <h6 class="card-title text-uppercase">Sala {this.props.title}</h6>

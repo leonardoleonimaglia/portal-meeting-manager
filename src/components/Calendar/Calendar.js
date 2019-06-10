@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {Component} from 'react';
 import './Calendar.css'
 import BigCalendar from 'react-big-calendar'
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
 import 'moment/locale/pt-br';
+import EventInfo from '../EventInfo/EventInfo'
 
 const localizer = BigCalendar.momentLocalizer(moment)
 
@@ -38,17 +39,36 @@ const messages = {
   showMore: total => `+ ver mais (${total})`,
 };
 
-let Calendar = props => (
-  <div>
-    <BigCalendar
-      localizer={localizer}
-      events={myEventsList}
-      startAccessor="start"
-      endAccessor="end"
-      messages={messages}
-      views={['month', 'day', 'week']}
-    />
-  </div>
-)
+class Calendar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { show: false };
+    alert('bla')
+  }
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  render() {
+    return (
+      <div>
+        <BigCalendar
+          localizer={localizer}
+          events={myEventsList}
+          startAccessor="start"
+          endAccessor="end"
+          messages={messages}
+          views={['month', 'day', 'week']}
+          onSelectEvent={event => alert(event.title)}
+          selectable
+          onSelectSlot={this.showModal}
+        />
+
+        <EventInfo show={this.state.show}/>
+      </div>
+    )
+  }
+}
 
 export default Calendar

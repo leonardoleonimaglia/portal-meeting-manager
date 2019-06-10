@@ -6,3 +6,7 @@
     background-color: #F64927 !important;
     font-size: 14px;
 }
+
+.rbc-day-bg:hover {
+    cursor: pointer;
+}

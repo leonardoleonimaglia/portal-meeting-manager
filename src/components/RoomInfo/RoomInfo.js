@@ -4,7 +4,7 @@ import Calendar from '../Calendar/Calendar'
 class RoomInfo extends Component {  
   render() {
     return (
-        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal fade" id="roomInfoModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
