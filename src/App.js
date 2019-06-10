@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import Login from './components/Login/Login';
 import Menu from './components/Menu/Menu';
-import Roomcard from './components/Roomcard/Roomcard'
-import EventInfo from './components/EventInfo/EventInfo'
+import RoomCard from './components/RoomCard/RoomCard'
+import RoomInfo from './components/RoomInfo/RoomInfo'
 
 function App() {
   return (
@@ -12,16 +12,16 @@ function App() {
 
       <div class="container">
         <div class="row">
-          <Roomcard title="Bromélia"/>
-          <Roomcard title="Begônia"/>
-          <Roomcard title="Azaléia"/>
+          <RoomCard title="Bromélia"/>
+          <RoomCard title="Begônia"/>
+          <RoomCard title="Azaléia"/>
 
-          <Roomcard title="Begônia"/>
-          <Roomcard title="Camélia"/>
+          <RoomCard title="Begônia"/>
+          <RoomCard title="Camélia"/>
         </div>
       </div>
 
-      <EventInfo title="Begônia"/>
+      <RoomInfo title="Begônia"/>
       
     </div>
   );

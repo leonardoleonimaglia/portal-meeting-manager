@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTv, faGlobe, faUser, faVideo } from '@fortawesome/free-solid-svg-icons'
-import './Roomcard.css';
+import './RoomCard.css';
 
 const cardTextSize = {
   fontSize: '11px'
 };
 
-class Roomcard extends Component {  
+class RoomCard extends Component {  
   render() {
     return (
       <div class="col-sm-4 mt-4" data-toggle="modal" data-target="#eventModal">
@@ -36,4 +36,4 @@ class Roomcard extends Component {
   }
 }
 
-export default Roomcard;
+export default RoomCard;
