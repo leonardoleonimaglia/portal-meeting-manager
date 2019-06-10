@@ -3,6 +3,7 @@ import './App.css';
 import Login from './components/Login/Login';
 import Menu from './components/Menu/Menu';
 import Roomcard from './components/Roomcard/Roomcard'
+import Calendar from './components/Calendar/Calendar'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Roomcard></Roomcard>
           <Roomcard></Roomcard>
         </div>
+
+        <Calendar></Calendar>
       </div>
       
     </div>
