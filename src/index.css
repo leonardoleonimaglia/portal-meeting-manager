@@ -23,6 +23,10 @@ code {
   border-color: #F64927 !important;
 }
 
+.btn-orange:hover {
+  background-color: #ed2907 !important;
+}
+
 .bg-orange {
   background-color: #F64927 !important;
 }

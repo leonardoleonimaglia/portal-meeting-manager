@@ -40,34 +40,26 @@ const messages = {
 };
 
 class Calendar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { show: false };
-    alert('bla')
-  }
-
-  showModal = () => {
-    this.setState({ show: true });
-  };
-
   render() {
-    return (
-      <div>
-        <BigCalendar
-          localizer={localizer}
-          events={myEventsList}
-          startAccessor="start"
-          endAccessor="end"
-          messages={messages}
-          views={['month', 'day', 'week']}
-          onSelectEvent={event => alert(event.title)}
-          selectable
-          onSelectSlot={this.showModal}
-        />
+    if (this.props.show) {
+      return (
+        <div >
+          <BigCalendar
+            localizer={localizer}
+            events={myEventsList}
+            startAccessor="start"
+            endAccessor="end"
+            messages={messages}
+            views={['month', 'day', 'week']}
+            onSelectEvent={event => alert(event.title)}
+            //selectable
+            //onSelectSlot={this.showModal}
+          />
+        </div>
+      )
+    }
 
-        <EventInfo show={this.state.show}/>
-      </div>
-    )
+    return null
   }
 }
 

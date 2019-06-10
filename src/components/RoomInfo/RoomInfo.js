@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Calendar from '../Calendar/Calendar'
+import EventInfo from '../EventInfo/EventInfo'
+
+const show = true;
 
 class RoomInfo extends Component {  
   render() {
@@ -14,7 +17,8 @@ class RoomInfo extends Component {
                         </button>
                     </div>
                     <div class="modal-body">
-                        <Calendar/>
+                        <Calendar show={show}/>
+                        <EventInfo show={show}/>
                     </div>
                 </div>
             </div>
